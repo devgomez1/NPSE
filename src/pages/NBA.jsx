@@ -31,7 +31,6 @@ function NBA() {
 
   function mapGames() {
     if (!Array.isArray(gamesFromDay.data)) {
-      // If data is not an array (initial state or API error), return a message or null
       return <p>No games available</p>;
     }
     return gamesFromDay.data.map((game) => {
@@ -300,7 +299,7 @@ function NBA() {
 
   const [nameInput, setNameInput] = useState("");
   const [commentInput, setCommentInput] = useState("");
-  const [selectedSeason, setSelectedSeason] = useState("");
+  const [selectedSeason, setSelectedSeason] = useState("2018-19");
   const [rate, setRate] = useState(0);
   const [previousPosts, setPreviousPosts] = useState([]);
 
@@ -320,7 +319,7 @@ function NBA() {
         <div>⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</div>
         <p>User: {post.username}</p>
         <p>Season: {post.season}</p>
-        <p>{post.comments}</p>
+        <p>{post.post}</p>
       </div>
     );
   });
@@ -379,25 +378,39 @@ function NBA() {
               className="dateSlot"
               placeholder="Month"
               value={startMonth}
-              onChange={(e) => setStartMonth(e.target.value)}
+              maxLength={2}
+              onChange={(e) => {
+                const numericValue = e.target.value.replace(/[^0-9]/g, "");
+                setStartMonth(numericValue)}
+              }
             />
             <input
               type="text"
               className="dateSlot"
               placeholder="Day"
               value={startDay}
-              onChange={(e) => setStartDay(e.target.value)}
+              maxLength={2}
+              onChange={(e) => {
+                const numericValue = e.target.value.replace(/[^0-9]/g, "");
+                setStartDay(numericValue)}
+              }
             />
             <input
               type="text"
               className="dateSlot"
               placeholder="Year"
               value={startYear}
-              onChange={(e) => setStartYear(e.target.value)}
+              maxLength={4}
+              onChange={(e) => {
+                const numericValue = e.target.value.replace(/[^0-9]/g, "");
+                setStartYear(numericValue)
+              }
+              }
             />
             <button type="submit">Search</button>
           </label>
         </form>
+        {mapGames()}
       </div>
       <h1>⎯⎯⎯⎯⎯⎯⎯</h1>
       <div className="commentInputSection">

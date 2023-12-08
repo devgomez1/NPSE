@@ -129,7 +129,7 @@ function NbaSeason({ item, nbaRecords }) {
           alt="Card image cap"
           onClick={() => setDisplayCard(!displayCard)}
         />
-        <div className="card-body">
+        <div className="card-body" >
           <h5 className="card-title">
             {item.year} - {parseInt(item.year) + 1} Season Overview
           </h5>
@@ -220,7 +220,7 @@ function NbaSeason({ item, nbaRecords }) {
             </div>
           ) : (
             <p className="card-text">
-              <small className="text-muted">Click to read more...</small>
+              <small className="text-muted">Click image to read more...</small>
             </p>
           )}
         </div>
