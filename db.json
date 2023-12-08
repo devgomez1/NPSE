@@ -1,0 +1,36 @@
+{
+  "nba": [
+    {
+      "id": 1,
+      "username": "rmerlin99",
+      "season": "2018-19",
+      "post": "I think this season was great."
+    },
+    {
+      "username": "RicTaco21",
+      "season": "2021-22",
+      "post": "Awesome season.",
+      "id": 2
+    }
+  ],
+  "f1": [
+    {
+      "id": 1,
+      "username": "deving",
+      "season": "2018",
+      "post": "I think that this season was amazing."
+    },
+    {
+      "id": 2,
+      "username": "Ricardom",
+      "season": "",
+      "post": "Hey am I posting"
+    },
+    {
+      "username": "Ric",
+      "season": "2021",
+      "post": "Does it work",
+      "id": 3
+    }
+  ]
+}
