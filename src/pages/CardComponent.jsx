@@ -9,8 +9,8 @@ function CardComponent({ season, imageUrls, description }) {
   };
 
   return (
-    <div className="card-deck mb-4">
-      <div className="card hoverable" style={{ backgroundColor: "whitesmoke" }}>
+    <div className="card-deck-mb-4">
+      <div className="card-hoverable" style={{ backgroundColor: "whitesmoke" }}>
         <img
           className="card-img-top card-img"
           src={imageUrls}

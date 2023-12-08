@@ -127,6 +127,7 @@ function F1() {
         image4={
           "https://media.cnn.com/api/v1/images/stellar/prod/200708140500-fernando-alonso-celebrates.jpg?q=w_3000,h_2239,x_0,y_0,c_fill"
         }
+        
       />
       {data.MRData &&
         chunkArray(data.MRData.SeasonTable.Seasons, 3).map(
@@ -152,6 +153,7 @@ function F1() {
 
       <BigCards
         title={"Max Verstappen is Too Good."}
+        link={'https://www.wsj.com/articles/max-verstappen-is-too-good-formula-one-f1645705'}
         article={`  Formula One driver Max Verstappen is having one of the most
                 dominant seasons ever by any athlete in any sport. And it's
                 boring. The Dutch driver has won 17 of the 20 races run so far

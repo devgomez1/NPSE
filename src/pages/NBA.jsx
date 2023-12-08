@@ -48,7 +48,7 @@ function NBA() {
 
   const cardArray = [
     {
-      img: "https://www.wowktv.com/wp-content/uploads/sites/52/2023/12/656ea742376a73.51521956.jpeg?w=2560&h=1440&crop=1",
+      img: "https://images.seattletimes.com/wp-content/uploads/2023/12/urnpublicidap.orgc71a82580486d59cd3ae050403767188Pacers_Bucks_Basketball_86793.jpg?d=768x512",
       year: "2023",
       champs: "",
       mvp: "",
@@ -56,7 +56,7 @@ function NBA() {
       link: "",
     },
     {
-      img: "https://cdn.nba.com/manage/2023/05/jokic-faceup.jpg",
+      img: "https://www.denverpost.com/wp-content/uploads/2021/02/GettyImages-1302192009.jpg?w=863",
       year: "2022",
       champs: "Denver Nuggets",
       mvp: "Joel Embiid",
@@ -64,7 +64,7 @@ function NBA() {
       link: "https://www.nba.com/news/history-season-review-2022-23",
     },
     {
-      img: "https://staticg.sportskeeda.com/editor/2022/12/e8b3c-16711516529694-1920.jpg?w=840",
+      img: "https://media.newyorker.com/photos/60a935eed5c804319e67887c/master/w_1920,c_limit/Thomas-Basketball.jpg",
       year: "2021",
       champs: "Golden State Warriors",
       mvp: "Nikola Jokic",
@@ -316,11 +316,11 @@ function NBA() {
 
   const showPosts = previousPosts.map((post) => {
     return (
-      <div>
+      <div key={post.id} className="previousPosts">
         <div>⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</div>
-        <p>User: {post.username}</p>
-        <p>Season: {post.season}</p>
-        <p>{post.post}</p>
+        <h5>User: {post.username}</h5>
+        <h5>Season: {post.season}</h5>
+        <h3>{post.post}</h3>
       </div>
     );
   });
@@ -371,16 +371,12 @@ function NBA() {
       </div>
       <BigCards
         title={"Lebron is a Robot."}
-        article={`LeBron James is already the defining figure of this basketball era with his strength, skills, smarts and relentless will to win.
-
-The Los Angeles Lakers superstar now seems determined to redefine how long an elite player can stay on top.
-
-James begins his 21st NBA season next week with his 39th birthday looming in December, yet the top scorer in league history shows shockingly few signs of decline from his peerless standard of performance. From a statistical standpoint, James’ prolific production hasn’t waned in any significant way for two full decades.
-
-James admits he can feel the years. For everybody else, they're almost impossible to see.`}
+        link={'https://www.desertsun.com/story/sports/basketball/2023/10/23/lakers-lebron-james-redefines-nba-longevity-in-his-21st-season/71292246007/'}
+        article={`LeBron James is already the defining figure of this basketball era with his strength, skills, smarts and relentless will to win. The Los Angeles Lakers superstar now seems determined to redefine how long an elite player can stay on top. James begins his 21st NBA season next week with his 39th birthday looming in December, yet the top scorer in league history shows shockingly few signs of decline from his peerless standard of performance. From a statistical standpoint, James’ prolific production hasn’t waned in any significant way for two full decades. James admits he can feel the years. For everybody else, they're almost impossible to see.`}
       />
       <BigCards
         title={"Lebron is better than Michael Jordan."}
+        link={'https://www.latimes.com/sports/newsletter/2023-02-08/lebron-james-greatest-basketball-player-in-history-sports-report#:~:text=James%20not%20only%20eclipsed%2038%2C387,a%20trademark%20James%20tomahawk%20dunk.'}
         article={`James not only eclipsed 38,387 points, but he made more than 38,387 points in a debate that is surely now resolved.
 
         Turn off “The Last Dance” videos, lose the romantic Bulls-colored glasses, separate the myths from the men, and the reality thunders down like a trademark James tomahawk dunk.

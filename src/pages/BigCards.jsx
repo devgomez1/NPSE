@@ -1,8 +1,8 @@
 import "../App.css";
 
-function BigCards({ title, article }) {
+function BigCards({ title, article, link }) {
   return (
-    <div className="container mt-3">
+    <div className="container mt-3" href={link}>
       <div className="row justify-content-center">
         <div className="col-12">
           <div className="row">
