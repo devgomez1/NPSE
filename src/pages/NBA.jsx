@@ -330,7 +330,7 @@ function NBA() {
     const newPost = {
       username: nameInput,
       season: selectedSeason,
-      comments: commentInput,
+      post: commentInput,
       likes: 0,
     };
 
@@ -342,7 +342,7 @@ function NBA() {
       body: JSON.stringify({
         username: nameInput,
         season: selectedSeason,
-        comments: commentInput,
+        post: commentInput,
       }),
     });
 

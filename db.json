@@ -11,6 +11,12 @@
       "season": "2021-22",
       "post": "Awesome season.",
       "id": 2
+    },
+    {
+      "username": "ricardo",
+      "season": "2021-22",
+      "post": "I like cheese",
+      "id": 3
     }
   ],
   "f1": [
@@ -19,6 +25,12 @@
       "username": "deving",
       "season": "2018",
       "post": "I think that this season was amazing."
+    },
+    {
+      "username": "devin",
+      "season": "2018",
+      "post": "test",
+      "id": 2
     }
   ]
 }
