@@ -6,6 +6,7 @@ import Footer from "./Footer";
 import NbaSeason from "./NbaSeason";
 import Carousel from "./Carousel";
 import CardComponent from "./CardComponent";
+import BigCards from "./BigCards";
 
 function NBA() {
   const [startMonth, setStartMonth] = useState("");
@@ -368,6 +369,28 @@ function NBA() {
       <div className="row">
         <div className="card-deck">{mapCards}</div>
       </div>
+      <BigCards
+        title={"Lebron is a Robot."}
+        article={`LeBron James is already the defining figure of this basketball era with his strength, skills, smarts and relentless will to win.
+
+The Los Angeles Lakers superstar now seems determined to redefine how long an elite player can stay on top.
+
+James begins his 21st NBA season next week with his 39th birthday looming in December, yet the top scorer in league history shows shockingly few signs of decline from his peerless standard of performance. From a statistical standpoint, James’ prolific production hasn’t waned in any significant way for two full decades.
+
+James admits he can feel the years. For everybody else, they're almost impossible to see.`}
+      />
+      <BigCards
+        title={"Lebron is better than Michael Jordan."}
+        article={`James not only eclipsed 38,387 points, but he made more than 38,387 points in a debate that is surely now resolved.
+
+        Turn off “The Last Dance” videos, lose the romantic Bulls-colored glasses, separate the myths from the men, and the reality thunders down like a trademark James tomahawk dunk.
+        
+        James, not Jordan, is the GOAT.
+        
+        He cemented that status on a night when a celebrity-studded sellout crowd screamed every time he touched the ball, urging him to shoot, groaning when he passed.
+        
+        He scored eight points in the first quarter, a dozen in the second quarter. Then, fueled by roars that grew louder with each basket, he turned it on with 16 points in the record-setting third quarter that appropriately featured virtually every sort of basket — free throws, layups, three-pointers and that clinching two-point fall-away.`}
+      />
       <h1>⎯⎯⎯⎯⎯⎯⎯</h1>
       <h2 className="searchGames">Search For Past NBA Games by Date</h2>
       <div className="searchFormContainer">
@@ -381,8 +404,8 @@ function NBA() {
               maxLength={2}
               onChange={(e) => {
                 const numericValue = e.target.value.replace(/[^0-9]/g, "");
-                setStartMonth(numericValue)}
-              }
+                setStartMonth(numericValue);
+              }}
             />
             <input
               type="text"
@@ -392,8 +415,8 @@ function NBA() {
               maxLength={2}
               onChange={(e) => {
                 const numericValue = e.target.value.replace(/[^0-9]/g, "");
-                setStartDay(numericValue)}
-              }
+                setStartDay(numericValue);
+              }}
             />
             <input
               type="text"
@@ -403,9 +426,8 @@ function NBA() {
               maxLength={4}
               onChange={(e) => {
                 const numericValue = e.target.value.replace(/[^0-9]/g, "");
-                setStartYear(numericValue)
-              }
-              }
+                setStartYear(numericValue);
+              }}
             />
             <button type="submit">Search</button>
           </label>
