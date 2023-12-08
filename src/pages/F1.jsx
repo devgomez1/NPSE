@@ -78,8 +78,8 @@ function F1() {
     return (
       <div key={post.id} className="previousPosts">
         <div>⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯</div>
-        <h5>User: {post.username}</h5>
-        <h5>Season: {post.season}</h5>
+        <h5>{post.username}</h5>
+        <h5>{post.season}</h5>
         <h3>{post.post}</h3>
       </div>
     );
